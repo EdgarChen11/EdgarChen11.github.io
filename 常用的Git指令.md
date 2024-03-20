@@ -28,3 +28,27 @@
 * `git push`
 
    將本地儲存庫(Repository)的 commit 推送到遠端儲存庫(例如 GitHub 上的遠端儲存庫)。
+
+* `git push origin [BRANCH_NAME]`
+
+   將本地儲存庫(Repository)的 commit 推送到遠端儲存庫的指定分支（Branch）。
+   其中：
+   `BRANCH_NAME`想要推送的本地分支名稱
+   `origin`遠端倉庫名稱
+
+* `git remote -v`
+
+   查看本地儲存庫所關聯的遠端倉庫訊息，輸入後會輸出以下內容：
+   `origin  https://github.com/user/repository.git (fetch)`
+   `origin  https://github.com/user/repository.git (push)`
+   其中
+   `git fetch` 從遠端儲存庫獲取最新版本到本地儲存庫，但不會自動merge，以便讓你查看遠端儲存庫最新的狀況。
+   `git push` 將本地儲存庫(Repository)的 commit 推送到遠端儲存庫。
+
+* `git log`
+
+   查看先前的 commit 記錄。退出 git log 命令按鍵盤上的`q`。
+
+* `git log --oneline`
+   
+   簡化顯示`git log`，只會顯示一行，通常是前幾碼跟註解說明文字組成。
